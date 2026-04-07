@@ -1,0 +1,27 @@
+.bolo {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin: 100px auto;
+}
+
+.barra {
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+    margin-left: 570px;
+    position: absolute;
+    bottom: 180px;
+    transition: transform 5s;
+}
+
+.mexer {
+    transform: translate(400px, 40px);
+}
+.mexer2{
+transform: translate(-450px, -100px);
+}
+
+.mexer3{
+transform: translate(500px, -350px);
+}
