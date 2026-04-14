@@ -33,25 +33,31 @@ window.onload = () => {
     img.classList.add("sumir");
 
     setTimeout(() => {
-      i++;
-      img.src = imagens[i];
-       if (imagens[i] === "8.png") {
-      img.classList.add("subir");
-    } else {
-      img.classList.remove("subir");
-    }
-    if (imagens[i] === "10.png") {
-      img.classList.add("adireita");
-    } else {
-      img.classList.remove("adireita");
-    }
 
+      if (i < imagens.length - 1) {
+        i++;
+        img.src = imagens[i];
+      }
+
+      if (imagens[i] === "8.png") {
+        img.classList.add("subir");
+      } else {
+        img.classList.remove("subir");
+      }
+
+      // último elemento
+      if (i === imagens.length - 1) {
+        img.classList.add("adireita");
+      } else {
+        img.classList.remove("adireita");
+      }
 
       img.classList.remove("sumir");
 
       if (i === imagens.length - 1) {
         clearInterval(intervalo);
       }
+
     }, 1000);
 
   }, 5000);
@@ -67,19 +73,25 @@ window.onload = () => {
     img2.classList.add("sumir");
 
     setTimeout(() => {
-      i2++;
-      img2.src = imagens2[i2];
-       if (imagens[i] === "10.png") {
-      img.classList.add("aesquerda");
-    } else {
-      img.classList.remove("aesquerda");
-    }
+
+      if (i2 < imagens2.length - 1) {
+        i2++;
+        img2.src = imagens2[i2];
+      }
+
+      // último elemento
+      if (i2 === imagens2.length - 1) {
+        img2.classList.add("aesquerda");
+      } else {
+        img2.classList.remove("aesquerda");
+      }
 
       img2.classList.remove("sumir");
 
       if (i2 === imagens2.length - 1) {
         clearInterval(intervalo2);
       }
+
     }, 1000);
 
   }, 5000);

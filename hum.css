@@ -59,11 +59,10 @@ transform: translateY(-60px);
 
 }
 
-.adireita{
-    transform: translatex(-200px);
-
+.adireita {
+  transform: translateX(230px);
 }
 
 .aesquerda{
-    transform: translatex(250px);
+    transform: translatex(-150px);
 }
