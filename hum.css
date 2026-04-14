@@ -27,11 +27,11 @@ transform: translate(500px, -350px);
 }
 
 .mexer4{
-transform: translate(550px, 150px);
+transform: translate(500px, 80px);
 }
 
 .mexer5{
-transform: translate(-350px, -350px);
+transform: translate(0px, 40px);
 }
 
 .imager{
@@ -52,4 +52,18 @@ transform: translate(-350px, -350px);
 
 .sumir{
     opacity: 0;
+}
+
+.subir{
+transform: translateY(-60px);
+
+}
+
+.adireita{
+    transform: translatex(-200px);
+
+}
+
+.aesquerda{
+    transform: translatex(250px);
 }
