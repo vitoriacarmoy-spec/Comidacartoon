@@ -37,17 +37,25 @@ transform: translate(0px, 40px);
 .imager{
     width: 300px;
     height: 300px;
+     margin-left: auto;
+    margin-right: auto;
+    transform: scaleX(1.5) scaleY(2);
+    position: absolute;
 }
+
 .falabarra{
     width: 150px;
     height: 150px;
     transition: opacity 1s ease;
     opacity: 1;
+    transform: scaleX(1.5) scaleY(2);
+
 }
 .realbarra{
     width: 200px;
     height: 50px;
     margin-bottom: 70px;
+     transform: scaleX(2.5) scaleY(4);
 }
 
 .sumir{
@@ -55,7 +63,7 @@ transform: translate(0px, 40px);
 }
 
 .subir{
-transform: translateY(-60px);
+ transform: scale(2) translateY(-50px);
 
 }
 
@@ -63,6 +71,21 @@ transform: translateY(-60px);
   transform: translateX(230px);
 }
 
-.aesquerda{
-    transform: translatex(-150px);
+.aesquerda {
+  transform: translateX(-150px) scaleX(2.5) scaleY(4);
+}
+.falabolo{
+width: 200px;
+height: 200px;
+background-color: blueviolet;
+margin-top: -420px;
+margin-left: 300px;
+}
+
+.faladobolo{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    transform: scaleX(1.5) scaleY(2);
 }

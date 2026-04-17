@@ -2,23 +2,23 @@ console.log("Funcionando!");
 
 setTimeout(() => {
   document.querySelector(".barra").classList.add("mexer");
-}, 5000);
+}, 6000);
 
 setTimeout(() => {
   document.querySelector(".barra").classList.add("mexer2");
-}, 10000);
+}, 12000);
 
 setTimeout(() => {
   document.querySelector(".barra").classList.add("mexer3");
-}, 15000);
+}, 18000);
 
 setTimeout(() => {
   document.querySelector(".barra").classList.add("mexer4");
-}, 20000);
+}, 24000);
 
 setTimeout(() => {
   document.querySelector(".barra").classList.add("mexer5");
-}, 25000);
+}, 30000);
 
 //separação bonitinha
 window.onload = () => {
@@ -26,7 +26,7 @@ window.onload = () => {
   // FALABARRA
   const img = document.querySelector(".falabarra");
 
-  const imagens = ["2.png","4.png","6.png","8.png","10.png"];
+  const imagens = ["tela.png","2.png","4.png","6.png","8.png","10.png"];
   let i = 0;
 
   const intervalo = setInterval(() => {
@@ -60,13 +60,13 @@ window.onload = () => {
 
     }, 1000);
 
-  }, 5000);
+  }, 6000);
 
 
   // REALBARRA
   const img2 = document.querySelector(".realbarra");
-
-  const imagens2 = ["b1.png","b2.png","b3.png","b4.png","b5.png"];
+//sabo muito kkkkkkkk
+  const imagens2 = ["b1.png","b1.png","b2.png","b3.png","b4.png","b5.png"];
   let i2 = 0;
 
   const intervalo2 = setInterval(() => {
@@ -94,6 +94,30 @@ window.onload = () => {
 
     }, 1000);
 
-  }, 5000);
+  }, 6000);
 
+const img3 = document.querySelector(".faladobolo");
+
+  const imagens3 = ["tela.png","1.png","3.png","5.png","7.png","9.png"];
+  let i3 = 0;
+
+  const intervalo3 = setInterval(() => {
+    img3.classList.add("sumir");
+
+    setTimeout(() => {
+
+      if (i3 < imagens3.length - 1) {
+        i3++;
+        img3.src = imagens3[i3];
+      }
+
+      img3.classList.remove("sumir");
+
+      if (i3 === imagens3.length - 1) {
+        clearInterval(intervalo3);
+      }
+
+    }, 1000);
+
+  }, 6000);
 };
