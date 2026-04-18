@@ -1,17 +1,17 @@
 .bolo {
     width: 300px;
     height: 300px;
-    background-color: black;
+    background-color:  none;
     margin: 100px auto;
 }
 
 .barra {
-    width: 400px;
+    width: 500px;
     height: 150px;
-    background-color: brown;
-    margin-left: 420px;
+    background-color: none;
+    margin-left: 300px;
     position: absolute;
-    bottom: 100px;
+    bottom: 130px;
     transition: transform 5s;
 }
 
@@ -19,19 +19,19 @@
     transform: translate(400px, 40px);
 }
 .mexer2{
-transform: translate(-350px, -100px);
+transform: translate(-260px, -100px);
 }
 
 .mexer3{
-transform: translate(500px, -350px);
+transform: translate(200px, -60px);
 }
 
 .mexer4{
-transform: translate(500px, 80px);
+transform: translate(300px, 70px);
 }
 
 .mexer5{
-transform: translate(0px, 40px);
+transform: translate(280px, -10px);
 }
 
 .imager{
@@ -40,7 +40,7 @@ transform: translate(0px, 40px);
      margin-left: auto;
     margin-right: auto;
     transform: scaleX(1.5) scaleY(2);
-    position: absolute;
+    position: relative;
 }
 
 .falabarra{
@@ -48,14 +48,21 @@ transform: translate(0px, 40px);
     height: 150px;
     transition: opacity 1s ease;
     opacity: 1;
-    transform: scaleX(1.5) scaleY(2);
+    transform: scaleX(2) scaleY(2);
+    position: absolute;
+    top: 0;
+    left: 0;
 
 }
 .realbarra{
     width: 200px;
     height: 50px;
     margin-bottom: 70px;
-     transform: scaleX(2.5) scaleY(4);
+     transform: scaleX(2.5) scaleY(5);
+      position: absolute;
+    bottom: -30px;
+    right: 0px;
+   
 }
 
 .sumir{
@@ -63,23 +70,25 @@ transform: translate(0px, 40px);
 }
 
 .subir{
- transform: scale(2) translateY(-50px);
+ transform: scale(2) translateY(-30px);
 
 }
 
 .adireita {
-  transform: translateX(230px);
+  transform: translateX(400px)scale(2);
+  
 }
 
 .aesquerda {
-  transform: translateX(-150px) scaleX(2.5) scaleY(4);
+  transform: translateX(-300px) scaleX(2.5) scaleY(4);
+  
 }
 .falabolo{
 width: 200px;
 height: 200px;
-background-color: blueviolet;
+background-color: none;
 margin-top: -420px;
-margin-left: 300px;
+margin-left: 280px;
 }
 
 .faladobolo{
@@ -87,5 +96,10 @@ margin-left: 300px;
     height: 200px;
     position: absolute;
     z-index: 2;
-    transform: scaleX(1.5) scaleY(2);
+    transform: scaleX(2) scaleY(2);
+}
+
+.chegar{
+    transform: scale(3) translateX(30px);
+    transition: transform 2s;
 }

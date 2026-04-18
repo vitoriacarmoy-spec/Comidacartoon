@@ -26,7 +26,7 @@ window.onload = () => {
   // FALABARRA
   const img = document.querySelector(".falabarra");
 
-  const imagens = ["tela.png","2.png","4.png","6.png","8.png","10.png"];
+  const imagens = [" ","2.png","4.png","6.png","8.png","10.png"];
   let i = 0;
 
   const intervalo = setInterval(() => {
@@ -96,9 +96,11 @@ window.onload = () => {
 
   }, 6000);
 
-const img3 = document.querySelector(".faladobolo");
+setTimeout(() => {
 
-  const imagens3 = ["tela.png","1.png","3.png","5.png","7.png","9.png"];
+  const img3 = document.querySelector(".faladobolo");
+
+  const imagens3 = ["","1.png","3.png","5.png","7.png","9.png", "11.png"];
   let i3 = 0;
 
   const intervalo3 = setInterval(() => {
@@ -111,6 +113,12 @@ const img3 = document.querySelector(".faladobolo");
         img3.src = imagens3[i3];
       }
 
+      if (imagens3[i3] === "11.png") {
+        img3.classList.add("chegar");
+      } else {
+        img3.classList.remove("chegar");
+      }
+
       img3.classList.remove("sumir");
 
       if (i3 === imagens3.length - 1) {
@@ -120,4 +128,7 @@ const img3 = document.querySelector(".faladobolo");
     }, 1000);
 
   }, 6000);
+
+}, 0); 
+
 };
