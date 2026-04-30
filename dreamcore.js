@@ -132,3 +132,16 @@ setTimeout(() => {
 }, 0); 
 
 };
+
+let carregou = false;
+window.addEventListener("load",() =>{
+  carregou = true;
+
+});
+
+setTimeout(()=>{
+  if (carregou){
+    document.body.classList.add("loaded");
+
+  }
+},30000);
