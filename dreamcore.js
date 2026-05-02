@@ -142,6 +142,6 @@ window.addEventListener("load",() =>{
 setTimeout(()=>{
   if (carregou){
     document.body.classList.add("loaded");
-
+    console.log("aaaaa");
   }
 },30000);
