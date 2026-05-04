@@ -143,5 +143,7 @@ setTimeout(()=>{
   if (carregou){
     document.body.classList.add("loaded");
     console.log("aaaaa");
+
+    window.location.href ="pag2.html"
   }
 },30000);
