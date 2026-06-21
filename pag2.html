@@ -13,12 +13,13 @@
     <div class="bar">
 <img src="elbolo.png" alt="" class="foto">
 <nav class="navi">
-    <li class="sbtn"></li>
-    <li class="sbtn"></li>
-    <li class="sbtn"></li>
-    <li class="sbtn"></li>
-    <li class="sbtn"></li>
+    <li class="ativo">SSSSSS</li>
+    <li class="sbtn">EEEEE</li>
+    <li class="sbtn">CCCCC</li>
+    <li class="sbtn">FFFFFF</li>
+    <li class="sbtn">LLLLLL</li>
 </nav>
+<button class="entrar">Entrar-> </button>
 
     </div>
 
@@ -78,15 +79,44 @@ h1 {
    
 
 }
-.sbtn{
+li{
     width: 160px;
     height: 70px;
+    display: flex;
     background-color: aliceblue;
     margin-top: 58px;
     border-radius: 4px;
     list-style: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+.entrar{
+    width: 100px;
+    height: 70px;
+    background-color: rgb(255, 211, 180);
+    margin-top: 58px;
+    border: none;
+    margin-left: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+   font-size: large;
 }
 
+li:hover{
+    background-color: blueviolet;
+    color: black;
+}
+.entrar:hover{
+    background-color: chartreuse;
+    color: black;
+}
+.ativo{
+    background-color: chocolate;
+    color: white;
+    
+}
     </style>
 </body>
 </html>
